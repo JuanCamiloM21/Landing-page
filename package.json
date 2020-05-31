@@ -1,0 +1,25 @@
+{
+  "name": "Landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylus": "stylus -u nib -c -w -o public/estilos.css src/stylus/estilos.styl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanCamilo21/Landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanCamilo21/Landing-page/issues"
+  },
+  "homepage": "https://github.com/JuanCamilo21/Landing-page#readme",
+  "devDependencies": {
+    "nib": "^1.1.2",
+    "stylus": "^0.54.7"
+  }
+}
