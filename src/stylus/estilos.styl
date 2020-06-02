@@ -10,7 +10,7 @@
   width: 100%
   height 100px
   justify-content: space-between
-  padding: 15px 0
+  padding: 15px 7%
   align-items: center
   &__nav ul
     display: flex
@@ -32,19 +32,18 @@
     width: 100%
     margin: auto 0
     padding-right: 40px
-  &__text p
-    font-size: 17.5px
-  &__text input
-    height: 45px
-    width: 55%
-    margin-right: 10px
-  &__text input::placeholder
-    padding-left: 20px
-    
+    p
+      font-size: 1.1em
+    input
+      height: 45px
+      width: 55%
+      margin-right: 10px
+    input::placeholder
+      padding-left: 20px
   &__img
-    grid-column: 2
-  &__img img
-    width: 100%
+      grid-column: 2
+    img
+      width: 100%
 .button
   background: azul 
   color: white
@@ -63,30 +62,30 @@
   &__text
     grid-column: 1
     width: 75%
-  &__text p
-    font-size: 15.5px
-  &__text a
-    font-size: 15.5px
-    text-decoration: none
-    color: #3B9886
-    padding-bottom: 3px
-    border-bottom: 1px solid #3B9886
+    p
+      font-size: 0.96em
+    a
+      font-size: 0.96em
+      text-decoration: none
+      color: #3B9886
+      padding-bottom: 3px
+      border-bottom: 1px solid #3B9886
   &__img
     grid-column: 2
     text-align: center
     padding-top: 20px
-  &__img img
-    width: 100%
-    height: auto
+    img
+      width: 100%
+      height: auto
 
 .testimonial
   background-color: white
-  margin: 40px 0;
+  margin: 40px 0
   padding: 30px 40px
-  width: 71%;
+  width: 330px
   border-radius: 5px
   p
-    font-size: 14px
+    font-size: 0.76em
     margin-top: 5px
   &__footer
     display: flex
@@ -98,8 +97,9 @@
     margin: auto 10px
     h4
       margin: 0
+      font-size: 0.81em
     span
-      font-size: 11px
+      font-size: 0.56em
 
 .contacto
   padding: 50px 0
@@ -145,6 +145,8 @@
       margin-bottom: 10px
   &__contact a
     margin-left: 10px
+  &__contact--email
+    margin-top: 10px
   &__social
     display: flex
     div
@@ -157,4 +159,134 @@
   grid-column-end: 4
   a 
     color: hsl(228, 45%, 44%)
+
+@media (max-width:767px)
+  .contenedor
+    width: 90%
+    margin: auto
+
+  .header
+    padding: 15px 2.5%
+    &__img img
+      width: 110px
+    &__nav 
+      ul
+        padding: 0
+      li
+        margin: 0 4px
+        a
+          14px
+      li:last-child
+        margin-right: 0
+        padding-right: 0
+
+  .content
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: auto 1fr
+    text-align: center
+    &__text
+      grid-row: 2
+      width: 100%
+      padding-right: 0px
+      p
+        font-size: .93em
+        width 94%
+        margin: 25px auto
+      input
+        height: 45px
+        width: 95%
+        margin: 10px auto
       
+    &__img
+      grid-column: 1
+      grid-row: 1
+      margin: 15px 0
+      img
+        width: 100%
+  .button
+    width 95%
+  
+  .section
+    grid-template-columns: 1fr
+    grid-template-rows: auto 1fr
+    justify-content: center
+    &__title
+      font-size: 1.1em
+      text-align: center
+    &__text
+      grid-column: 1
+      width: 100%
+      p
+        font-size: .88em
+      a
+        margin-left: 80px
+    &__img
+      grid-column: 1
+      grid-row: 1
+      margin-bottom: 60px
+      img
+        width: 100%
+
+  .testimonial
+    margin: 40px auto
+    padding: 15px 20px
+    width: 290px
+    p
+      font-size: 0.70em
+    &__footer
+      img
+        width: 30px
+        height: 30px
+    &__footer--name
+      line-height: 10px
+      h4
+        font-size: 0.71em
+      span
+        font-size: 0.52em
+    
+  .contact
+    grid-template-columns: 1fr
+    &__history
+      width: 90%;
+      text-align: center;
+      margin: auto
+      h2
+        font-size: 1.3em;
+      p
+        font-size: 0.95em
+    &__form
+      padding: 0
+      margin: auto
+      width: 90%
+      text-align: center    
+    &__form--input
+      width: 95%
+      margin: 0 auto 10px
+
+
+  .footer
+    grid-template-columns: 1fr
+    width: 92%
+    margin: auto
+    ul
+      padding: 0
+    a
+      font-size: 1em
+    &__contact 
+      grid-column: 1
+      margin-top: 35px
+    &__information
+      grid-column: 1
+      margin-top: 35px
+    &__conditions
+      grid-column: 1
+      margin-top: 35px
+    &__social
+      grid-column: 1
+      margin-top: 35px
+      justify-content: center
+
+  .attribution
+    grid-column: 1
+    font-size: 9px
