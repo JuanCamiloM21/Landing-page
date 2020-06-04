@@ -41,6 +41,8 @@
       border: none
       border-radius: 4px
       box-shadow: 0 0 3px #000000
+      margin-top: 15px
+
     input::placeholder
       padding-left: 20px
   &__img
@@ -59,10 +61,8 @@
 .curve
   margin-top: 60px
   line-height: 0
-  svg
-    display: block
-  img
-    display: none
+  &__desktop
+    width: -webkit-fill-available
 
 .contentTwo
   background-color: blanco
@@ -79,9 +79,9 @@
     a
       font-size: 0.96em
       text-decoration: none
-      color: #3B9886
+      color: #1d584d
       padding-bottom: 3px
-      border-bottom: 1px solid #3B9886
+      border-bottom: 1px solid #1d584d
   &__img
     grid-column: 2
     text-align: center
@@ -139,6 +139,8 @@
     border: none
     border-radius: 3px
     box-shadow: 0 0 3px #9c9797
+    margin-top: 10px
+
   &__form--input::placeholder
     padding-left: 20px
 
@@ -167,6 +169,9 @@
     display: flex
     div
       margin-right: 10px
+      text-align: center
+      p
+        margin: 0
 
 .attribution
   font-size: 11px
@@ -174,7 +179,7 @@
   grid-column-start: 2
   grid-column-end: 4
   a 
-    color: hsl(228, 45%, 44%)
+    color: #839bff
 
 @media (max-width:767px)
   .contenedor
@@ -225,10 +230,6 @@
 
   .curve
     margin-top: 30px
-    svg
-      display: none
-    img
-      display: block
   
   .section
     grid-template-columns: 1fr

@@ -2,6 +2,7 @@
 
 Este es un proyecto de la pagina [Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
 La tecnología utilizada es HTML y CSS utilizando el prepocesador STYLUS y nomenclatura BEM.
+Es una landing page que cumple con todos los estandares de accesibilidad web.
 
 ## Comenzar 🛰
 
@@ -31,6 +32,7 @@ Lo único que necesitas sera tu editor de código preferido y tu mejor actitud.
 - CSS
 - STYLUS
 - BEM
+- ACCESIBILIDAD WEB
 
 ## Autor 🙋🏼‍♂️
 
